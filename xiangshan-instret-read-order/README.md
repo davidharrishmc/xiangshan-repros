@@ -1,6 +1,6 @@
 # XiangShan: csrr of minstret/instret is not ordered after older instructions
 
-For [OpenXiangShan/XiangShan#ISSUE](https://github.com/OpenXiangShan/XiangShan/issues/ISSUE).
+For [OpenXiangShan/XiangShan#6852](https://github.com/OpenXiangShan/XiangShan/issues/6852).
 
 `instret.S` reads `minstret` (or `instret`), runs 8 instructions, and reads it again, 4 times per
 case. The difference must be 9: the first `csrr` and the 8 instructions after it. Zicsr says "an
