@@ -1,0 +1,21 @@
+emu-kmh compiled at Sep 30 2026, 02:22:54
+[INFO] init for constantin: loaded from init.
+A  vle8.v        vl=9  e8,  tdata2=buf+0x0  : mcause=0x3 mtval=buf+0x0 vstart=0x0  (required: mcause=0x3 mtval=buf+0x0 vstart=0x0)  ok
+B  vle8.v        vl=9  e8,  tdata2=buf+0x8  : mcause=0x3 mtval=buf+0x0 vstart=0x8  (required: mcause=0x3 mtval=buf+0x8 vstart=0x8)  WRONG
+C  vle8.v        vl=32 e8,  tdata2=buf+0x18 : mcause=0x3 mtval=buf+0x10 vstart=0x18  (required: mcause=0x3 mtval=buf+0x18 vstart=0x18)  WRONG
+D  vle8.v v0.t   vl=9  e8,  elements 0-3 inactive, tdata2=buf+0x8 : mcause=0x3 mtval=buf+0x4 vstart=0x8  (required: mcause=0x3 mtval=buf+0x8 vstart=0x8)  WRONG
+E  vle32.v       vl=4  e32, tdata2=buf+0x8  : mcause=0x3 mtval=buf+0x0 vstart=0x2  (required: mcause=0x3 mtval=buf+0x8 vstart=0x2)  WRONG
+F  vse8.v        vl=9  e8,  tdata2=buf+0x8  : mcause=0x3 mtval=buf+0x0 vstart=0x8  (required: mcause=0x3 mtval=buf+0x8 vstart=0x8)  WRONG
+G  lb (scalar)              tdata2=buf+0x8  : mcause=0x3 mtval=buf+0x8 vstart=0x0  (required: mcause=0x3 mtval=buf+0x8 vstart=0x0)  ok
+FAIL
+Core  0's Commit SHA is: e7bab53e66, dirty: 0
+Using simulated 8386560MB RAM
+The image is vtrig.elf
+ELF file detected and loading image from extracted elf file
+Loading 4540 bytes at address 0x80000000 at offset 0x0
+Loading 8208 bytes at address 0x80002000 at offset 0x2000
+Core 0: [31mHIT BAD TRAP at pc = 0x80000302
+[0m[35mCore-0 instrCnt = 9,823, cycleCnt = 71,770, IPC = 0.136868
+[0m[34mSeed=0 Guest cycle spent: 71,776 (this will be different from cycleCnt if emu loads a snapshot)
+[0m[34mHost time spent: 369,610ms
+run-xiangshan.sh: simulation did not end on a good trap (treated as a failure)
