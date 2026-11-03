@@ -5,3 +5,4 @@ Standalone reproducers for issues filed against [OpenXiangShan/XiangShan](https:
 | Issue | Directory | Tarball |
 |---|---|---|
 | [XiangShan#6851](https://github.com/OpenXiangShan/XiangShan/issues/6851) | [xiangshan-vector-trigger-tval](xiangshan-vector-trigger-tval/) | [xiangshan-vector-trigger-tval.tar.gz](xiangshan-vector-trigger-tval.tar.gz) |
+| [XiangShan#ISSUE](https://github.com/OpenXiangShan/XiangShan/issues/ISSUE) | [xiangshan-instret-read-order](xiangshan-instret-read-order/) | [xiangshan-instret-read-order.tar.gz](xiangshan-instret-read-order.tar.gz) |

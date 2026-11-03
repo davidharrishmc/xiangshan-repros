@@ -1,0 +1,19 @@
+emu-kmh compiled at Sep 30 2026, 02:22:54
+[INFO] init for constantin: loaded from init.
+A  minstret, 8 addi        (required 0x9 each): 0x5 0x0 0x0 0x0 
+B  instret,  8 addi        (required 0x9 each): 0x5 0x0 0x0 0x0 
+C  minstret, 8 mul chain   (required 0x9 each): 0x5 0x5 0x0 0x22 
+D  minstret, ld + 7 users  (required 0x9 each): 0x0 0x0 0x0 0x0 
+E  minstret, 2 div + 6 addi (required 0x9 each): 0x0 0x0 0x0 0x0 
+FAIL
+Core  0's Commit SHA is: e7bab53e66, dirty: 0
+Using simulated 8386560MB RAM
+The image is instret.elf
+ELF file detected and loading image from extracted elf file
+Loading 4358 bytes at address 0x80000000 at offset 0x0
+Loading 8208 bytes at address 0x80002000 at offset 0x2000
+Core 0: [31mHIT BAD TRAP at pc = 0x80000180
+[0m[35mCore-0 instrCnt = 4,648, cycleCnt = 26,499, IPC = 0.175403
+[0m[34mSeed=0 Guest cycle spent: 26,505 (this will be different from cycleCnt if emu loads a snapshot)
+[0m[34mHost time spent: 75,795ms
+run-xiangshan.sh: simulation did not end on a good trap (treated as a failure)
