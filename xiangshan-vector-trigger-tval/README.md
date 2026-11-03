@@ -1,6 +1,6 @@
 # XiangShan: a trigger on a vector element writes the flow's first active byte to mtval
 
-For [OpenXiangShan/XiangShan#ISSUE](https://github.com/OpenXiangShan/XiangShan/issues/ISSUE).
+For [OpenXiangShan/XiangShan#6851](https://github.com/OpenXiangShan/XiangShan/issues/6851).
 
 `vtrig.S` arms trigger 0 as mcontrol6 (type 6, m = 1, match = equal, size = any, select = address,
 action = breakpoint) on `tdata2 = buf + OFF`. It then runs one vector load or store that reaches
